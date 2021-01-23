@@ -42,7 +42,7 @@ const Card = (article) => {
 
   card.addEventListener('click', (event) => {
     console.log(article.headline);
-  })
+  });
 
   return card;
 }
@@ -63,7 +63,7 @@ const cardAppender = (selector) => {
         document.querySelector(selector).appendChild(Card(article));
       });
     }
-  })
+  });
 }
 
 export { Card, cardAppender }
