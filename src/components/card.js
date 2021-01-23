@@ -40,6 +40,10 @@ const Card = (article) => {
   imgContainer.appendChild(img);
   author.appendChild(span);
 
+  card.addEventListener('click', (event) => {
+    console.log(article.headline);
+  })
+
   return card;
 }
 
